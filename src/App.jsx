@@ -10,110 +10,12 @@ function App() {
     
 
 
-<section className="legacy-section">
-  <h1>COMMUNITY SERVICES</h1>
-  <p className="legacy-description">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat, ante eu cursus pretium. 
-    Lorem ipsum dolor sit amet, consectetur placerat, ante eu cursus pretium.
-  </p>
 
-  <div className="community-gallery">
-    <div className="gallery-main">
-      <img src="community1.png" alt="Donation Activity" />
-    </div>
 
-    <div className="gallery-side">
-      <img src="community2.png" alt="Service Activity 1" />
-      <img src="community3.png" alt="Service Activity 2" />
-    </div>
-  </div>
 
-  <button className="show-more-btn">Show More</button>
-</section>
+  
 
-<section className="legacy-section">
-  <h1>Making Difference</h1>
-  <p className="legacy-description">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat, ante eu cursus pretium. 
-    Lorem ipsum dolor sit amet, consectetur placerat, ante eu cursus pretium.
-  </p>
-      <div>
-        <img src="grad.png" alt="Why Choose" width="25%" />
-        <img src="development.png" alt="Self Development" width="25%" />
-        <img src="spirituality.png" alt="Spirituality" width="25%" />
-         <img src="alumni.png" alt="Alumni" width="25%" />
-      </div>
-  </section>
 
-  <section className="legacy-section" >
-  <h1>Events</h1>
-  <p className="legacy-description">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat, ante eu cursus pretium. 
-    Lorem ipsum dolor sit amet, consectetur placerat, ante eu cursus pretium.
-  </p>
-
-  <div className="events-container">
-    {/* High */}
-    <div className="event-card event-high">
-      <img src="event1.png" alt="Annual Function" />
-      <div className="event-info">
-        <h3>Annual Function</h3>
-        <p>Lorem ipsum dolor sit amet adipiscing dolor ipsum.</p>
-      </div>
-    </div>
-
-    {/* Low */}
-    <div className="event-card event-low">
-      <img src="event2.png" alt="Annual Function" />
-      <div className="event-info">
-        <h3>Annual Function</h3>
-        <p>Lorem ipsum dolor sit amet adipiscing dolor ipsum.</p>
-      </div>
-    </div>
-
-    {/* Lowest/Center */}
-    <div className="event-card event-lowest">
-      <img src="event3.png" alt="Annual Function" />
-      <div className="event-info">
-        <h3>Annual Function</h3>
-        <p>Lorem ipsum dolor sit amet adipiscing dolor ipsum.</p>
-      </div>
-    </div>
-
-    {/* Low */}
-    <div className="event-card event-low">
-      <img src="event4.png" alt="Annual Function" />
-      <div className="event-info">
-        <h3>Annual Function</h3>
-        <p>Lorem ipsum dolor sit amet adipiscing dolor ipsum.</p>
-      </div>
-    </div>
-
-    {/* High */}
-    <div className="event-card event-high">
-      <img src="event4.png" alt="Annual Function" />
-      <div className="event-info">
-        <h3>Annual Function</h3>
-        <p>Lorem ipsum dolor sit amet adipiscing dolor ipsum.</p>
-      </div>
-    </div>
-  </div>
-  <button className="show-more-btn">Show More</button>
-  </section>
-
-   <section className="legacy-section" >
-  <h1>News Update</h1>
-  <p className="legacy-description">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat, ante eu cursus pretium. 
-    Lorem ipsum dolor sit amet, consectetur placerat, ante eu cursus pretium.
-  </p>
-  <div>
-    <img src="new1.png" width="25%" />
-    <img src="new1.png" width="25%" />
-    <img src="new1.png" width="25%" />
-    <img src="new1.png" width="25%" />
-  </div>
-  </section>
 
 <footer className="main-footer">
   <div className="footer-blue-box">

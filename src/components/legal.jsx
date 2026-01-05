@@ -23,3 +23,5 @@ import navbar from "./legal.css";
     </div>
   </div>
 </section>
+
+export default legal;
