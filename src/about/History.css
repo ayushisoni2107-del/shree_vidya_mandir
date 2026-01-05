@@ -1,0 +1,18 @@
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.content-text {
+  flex: 1;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.content-image {
+  flex: 1;
+  width: 25%;
+  border-radius: 20px;   /* rounded borders */
+  object-fit: cover;
+}

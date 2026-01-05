@@ -1,3 +1,4 @@
+  import { NavLink } from "react-router-dom";
   import React from "react";
   import  "./Legal.css";
   import  "./Community.css";
@@ -29,14 +30,8 @@ function Footer() {
     {/* Column 2: Navigation Links */}
     <div className="footer-col links-grid">
       <div className="link-column">
-        <a href="#">About Us</a>
-        <a href="#">Institutes</a>
-        <a href="#">Academics</a>
-        <a href="#">Events</a>
-        <a href="#">Sports</a>
-        <a href="#">Achievement</a>
-        <a href="#">Career</a>
-        <a href="#">Contact Us</a>
+        <NavLink to="/" end>Home</NavLink>
+        <NavLink to="/about">About Us</NavLink>
       </div>
     </div>
 

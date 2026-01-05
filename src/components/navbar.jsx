@@ -1,6 +1,7 @@
+import { NavLink } from "react-router-dom";
 import React from "react";
 import  "./Navbar.css";
-function Navbar() {
+const Navbar = () => {
   return (
     <>
       <div className="top-bar"></div>
@@ -13,8 +14,9 @@ function Navbar() {
             <p className="location-text">Dholka</p>
           </div>
         </div>
-        <ul className="nav-menu">
-          <li><a href="#">About Us</a></li>
+       {/*
+       <ul className="nav-menu">
+          <li><a href="">About Us</a></li>
           <li><a href="#">Institutes</a></li>
           <li><a href="#">Academics</a></li>
           <li><a href="#">Events</a></li>
@@ -22,7 +24,10 @@ function Navbar() {
           <li><a href="#">Achievement</a></li>
           <li><a href="#">Careers</a></li>
           <li><a href="#">Contact Us</a></li>
-        </ul>
+        </ul> 
+        */}
+        <NavLink to="/" end>Home</NavLink>
+        <NavLink to="/about">About Us</NavLink>
       </nav>
     </>
   );
