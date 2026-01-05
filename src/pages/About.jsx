@@ -3,6 +3,7 @@ import History from "../about/History";
 import Pillar from "../about/Pillar";
 import Truste from "../about/Truste";
 import Team from "../about/Team";
+import Board from "../about/Board"
 import Footer from "../Components/Footer";
 
 function About() {
@@ -13,6 +14,7 @@ function About() {
       <Pillar />
       <Truste />
       <Team />
+      <Board />
       <Footer />
       </>
       );
