@@ -10,12 +10,14 @@ function News() {
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat, ante eu cursus pretium. 
     Lorem ipsum dolor sit amet, consectetur placerat, ante eu cursus pretium.
   </p>
+  
   <div>
     <img src="new1.png" width="25%" />
     <img src="new1.png" width="25%" />
     <img src="new1.png" width="25%" />
     <img src="new1.png" width="25%" />
   </div>
+  
   </section>
   );
 }
