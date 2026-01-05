@@ -36,124 +36,9 @@
     transform: rotate(360deg);
   }
 }
-/* Top blue bar */
-.top-bar {
-  background-color: #3f51b5;
-  height: 40px;
-  width: 100%;
-}
 
-/* Navbar container */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 50px;
-  background-color: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
 
-/* Left side: Logo + Text */
-.nav-left {
-  display: flex;
-  align-items: center;
-}
 
-.logo-img {
-  height: 60px;
-  margin-right: 15px;
-}
-
-.title h2 {
-  margin: 0;
-  color: #1a237e;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-}
-
-.shree-text {
-  font-weight: bold;
-  color: #1a237e;
-}
-
-.location-text {
-  margin: 0;
-  color: #f57c00; /* Orange color for Dholka */
-  font-weight: bold;
-}
-
-/* Right side: Menu links */
-.nav-menu {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-menu li a {
-  text-decoration: none;
-  color: #333;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.nav-menu li a:hover {
-  color: #3f51b5;
-}
-
-.legacy-section {
-  padding: 60px 20px;
-  text-align: center;
-  background-color: #ffffff; /* No background image */
-}
-
-.legacy-description {
-  max-width: 800px;
-  margin: 0 auto 50px;
-  color: #666;
-}
-
-.legacy-timeline {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-}
-
-.legacy-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.logo-circle {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: white;
-  position: relative;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  margin-bottom: 15px;
-}
-
-.logo-circle img {
-  width: 75%;
-  height: auto;
-}
-
-.year {
-  font-size: 22px;
-  font-weight: bold;
-  color: #333;
-}
-
-.legacy-arrow {
-  font-size: 40px;
-  color: #3f51b5;
-  font-weight: bold;
-}
 
 /* Gallery Layout */
 .community-gallery {
@@ -178,10 +63,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 15px; /* Rounded corners like in the image */
+  border-radius: 15px;
 }
 
-/* Button Styling */
 .show-more-btn {
   padding: 12px 40px;
   border: 1px solid #f57c00;
@@ -197,7 +81,6 @@
   background-color: #f57c00;
   color: white;
 }
-
 
 /* Flex container for side-by-side alignment */
 .events-container {
@@ -231,7 +114,6 @@
   object-fit: cover;
 }
 
-/* Text overlay on images */
 .event-info {
   position: absolute;
   bottom: 0;
@@ -254,14 +136,13 @@
   opacity: 0.9;
 }
 
-
 .main-footer {
   padding: 40px 20px;
   background-color: #fff;
 }
 
 .footer-blue-box {
-  background-color: #3f51b5; /* Blue background */
+  background-color: #3f51b5; 
   border-radius: 25px;
   padding: 40px;
   display: flex;
@@ -270,8 +151,6 @@
   gap: 30px;
 }
 
-
-/* Branding Column */
 .footer-logo-row {
   display: flex;
   align-items: center;
@@ -303,21 +182,17 @@
   margin: 20px 0;
 }
 
-
 .icon-circle {
   width: 35px;
   height: 35px;
-  background: #f57c00; /* Orange icons */
+  background: #f57c00; 
   border-radius: 50%;
   display: inline-block;
 }
 
-/* Links Column */
 .links-grid {
   display: flex;
   gap: 40px;
-  color: white;
-
 }
 
 .link-column {
@@ -327,8 +202,6 @@
   color: white;
 }
 
-
-/* Map Column */
 .map-container {
   display: flex;
   justify-content: flex-end;
@@ -341,7 +214,6 @@
   border: 4px solid white;
 }
 
-/* Bottom Bar */
 .footer-bottom {
   display: flex;
   justify-content: space-between;

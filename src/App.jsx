@@ -1,59 +1,14 @@
 import React from 'react';
+import Navbar from "./components/navbar.jsx";
 import './App.css';
 
 function App() {
   return (
     <>
-      <div className="top-bar"></div>
-      <nav className="navbar">
-        <div className="nav-left">
-          <img src="logo.png" alt="Logo" className="logo-img" />
-          <div className="title">
-            <span className="shree-text">Shree</span>
-            <h2 className="main-title">Vidhya Prachar Mandal</h2>
-            <p className="location-text">Dholka</p>
-          </div>
-        </div>
-        <ul className="nav-menu">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Institutes</a></li>
-          <li><a href="#">Academics</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Sports</a></li>
-          <li><a href="#">Achievement</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </nav>
 
-        <img 
-          src="school-building.jpg" 
-          alt="School Building" 
-          width="100%" height="auto" max-height="500px"  object-fit= "cover" display= "block"
-        />
     
-<section className="legacy-section">
-  <h1>55 Years of Legacy</h1>
-  <p className="legacy-description">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere purus ut leo iaculis convallis. 
-    Nullam fermentum odio quis volutpat libe sodales elementum.
-  </p>
-  <div className="legacy-timeline">
-    <div className="legacy-item">
-      <div className="logo-circle">
-        <img src="old-logo.jpg" alt="1969 Logo" />
-      </div>
-      <span className="year">1969</span>
-    </div>
-    <div className="legacy-arrow">→</div>
-    <div className="legacy-item">
-      <div className="logo-circle">
-        <img src="logo.png" alt="2024 Logo" />
-      </div>
-      <span className="year">2024</span>
-    </div>
-  </div>
-</section>
+    
+
 
 <section className="legacy-section">
   <h1>COMMUNITY SERVICES</h1>
@@ -184,7 +139,7 @@ function App() {
     {/* Column 2: Navigation Links */}
     <div className="footer-col links-grid">
       <div className="link-column">
-        <a href="#" color='white'>About Us</a>
+        <a href="#">About Us</a>
         <a href="#">Institutes</a>
         <a href="#">Academics</a>
         <a href="#">Events</a>
