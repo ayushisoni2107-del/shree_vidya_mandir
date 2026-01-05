@@ -1,23 +1,24 @@
-import navbar from "./components/navbar.jsx";
-import hero from "./components/hero.jsx";
-import legal from "./components/legal.jsx";
-import legal from "./components/community.jsx";
-import legal from "./components/diff.jsx";
-import legal from "./components/events.jsx";
-import legal from "./components/news.jsx";
+import Navbar from "../Components/Navbar";
+import Hero from "../Components/Hero";
+import Legal from "../Components/Legal";
+import Community from "../Components/Community";
+import Diff from "../Components/Diff";
+import Events from "../Components/Events";
+import News from "../Components/News";
+import Footer from "../Components/Footer";
 
 function Home() {
   return (
     <>
-      <navbar />
-      <hero />
-      <legal />
-      <community />
-      <diff />
-      <events />
-      <news />
+      <Navbar />
+      <Hero />
+      <Legal />
+      <Community />
+      <Diff />
+      <Events />
+      <News />
+      <Footer />
       
-
       </>
   )
 }

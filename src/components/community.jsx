@@ -1,7 +1,9 @@
   import React from "react";
-  import navbar from "./legal.css";
-  import navbar from "./community.css";
+  import "./Legal.css";
+  import "./Community.css";
 
+function Community() {
+  return (
 <section className="legacy-section">
   <h1>COMMUNITY SERVICES</h1>
   <p className="legacy-description">
@@ -22,5 +24,6 @@
 
   <button className="show-more-btn">Show More</button>
 </section>
-
-export default community;
+    );
+}
+export default Community;

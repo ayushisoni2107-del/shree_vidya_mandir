@@ -1,6 +1,9 @@
   import React from "react";
-  import navbar from "./legal.css";
- 
+  import "./Legal.css";
+
+
+ function Diff() {
+   return (
 <section className="legacy-section">
   <h1>Making Difference</h1>
   <p className="legacy-description">
@@ -14,5 +17,6 @@
          <img src="alumni.png" alt="Alumni" width="25%" />
       </div>
   </section>
-
-  export default diff;
+   );
+}
+  export default Diff;

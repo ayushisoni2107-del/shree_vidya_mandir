@@ -1,9 +1,10 @@
   import React from "react";
-  import navbar from "./legal.css";
-  import navbar from "./community.css";
-  import navbar from "./events.css";
+  import "./Legal.css";
+  import  "./Community.css";
+  import "./Events.css";
 
-
+function Events() {
+  return (
 <section className="legacy-section" >
   <h1>Events</h1>
   <p className="legacy-description">
@@ -59,4 +60,7 @@
   </div>
   <button className="show-more-btn">Show More</button>
   </section>
+  );
+}
 
+export default Events;

@@ -1,6 +1,8 @@
 import React from "react";
-import navbar from "./legal.css";
+import  "./Legal.css";
 
+function Legal() {
+  return (
 <section className="legacy-section">
   <h1>55 Years of Legacy</h1>
   <p className="legacy-description">
@@ -23,5 +25,7 @@ import navbar from "./legal.css";
     </div>
   </div>
 </section>
+  );
+}
 
-export default legal;
+export default Legal;

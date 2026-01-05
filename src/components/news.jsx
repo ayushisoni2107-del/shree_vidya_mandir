@@ -1,8 +1,9 @@
   import React from "react";
-  import navbar from "./legal.css";
-  import navbar from "./community.css";
+  import  "./Legal.css";
+  import "./Community.css";
 
-
+function News() {
+  return (
    <section className="legacy-section" >
   <h1>News Update</h1>
   <p className="legacy-description">
@@ -16,5 +17,7 @@
     <img src="new1.png" width="25%" />
   </div>
   </section>
-  
-  export default news;
+  );
+}
+
+  export default News;
