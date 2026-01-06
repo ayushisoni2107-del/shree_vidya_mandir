@@ -1,6 +1,6 @@
 import Navbar from "../Components/Navbar";
 import Events from "../Events/Events"
-
+import Annual from "../Events/Annual";
 import Footer from "../Components/Footer";
 
 function Event(){
@@ -8,7 +8,7 @@ function Event(){
         <>
         <Navbar />
         <Events />
-
+        <Annual />
         <Footer />
         </>
     );

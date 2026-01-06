@@ -12,7 +12,7 @@ Etiam vel consectetur dolor. Lorem ipsum dolor sit amet, consectetur adipiscing 
             <img src="a1.png" width="85%"  style={{ display: "block", margin: "0 auto" }}/>
             <img src="a1.png" width="85%"  style={{ display: "block", margin: "0 auto" }}/>
         </div>
-        <button className="show-more-btn" align="center">Show More</button>
+        <button className="show-more-btn">Show More</button>
         </>
     );
 
