@@ -20,18 +20,26 @@ Etiam vel consectetur dolor.</p>
           <InstituteCard />
           <InstituteCard />
           <InstituteCard />
+          <InstituteCard />
+          <InstituteCard />
+          <InstituteCard />
+          <InstituteCard />
         </div>
 
         {/* RIGHT COLUMN */}
         <div className="institute-column orange">
           <div className="column-title orange-title">
-            Shree Vidya Prakar Mandir Kharwasa, Dholka
+            Shree Vidya Prachar Mandal Kalikund, Dholka
           </div>
 
-          <InstituteCard />
-          <InstituteCard />
-          <InstituteCard />
-          <InstituteCard />
+          <InstituteCard1 />
+          <InstituteCard1 />
+          <InstituteCard1 />
+          <InstituteCard1 />
+          <InstituteCard1 />
+          <InstituteCard1 />
+          <InstituteCard1 />
+          <InstituteCard1 />
         </div>
       </div>
     </>
@@ -39,15 +47,32 @@ Etiam vel consectetur dolor.</p>
 }
     function InstituteCard() {
   return (
+    <>
     <div className="institute-card">
       <img src="s1.png" alt="Institute" />
 
       <div className="card-content">
         <h4>Shree C.H. Patel Sarswati Shikshanmandir</h4>
-        <p>Primary School</p>
-        <a href="#">school@gmail.com</a>
+        <p>Lorem ipsum dolor sit amet adipcing amet adipcingamet adipcing amet aqua lorem ipsum</p>
+        <a href="#">SCNPSshishumandir.com</a>
       </div>
     </div>
+    </>
   );
+}
+function InstituteCard1(){
+    return(
+        <>
+         <div className="institute-card">
+      <img src="s1.png" alt="Institute" />
+
+      <div className="card-content">
+        <h4>Shree B.S. Goswami Saraswati Shishumandir</h4>
+        <p>Lorem ipsum dolor sit amet adipcing amet adipcingamet adipcing amet aqua lorem ipsum</p>
+        <a href="#">sbsgss.com</a>
+      </div>
+    </div>
+        </>
+    );
 }
 export default Institute;
