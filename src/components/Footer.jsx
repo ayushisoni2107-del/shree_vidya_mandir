@@ -32,6 +32,7 @@ function Footer() {
       <div className="link-column">
         <NavLink to="/" end>Home</NavLink>
         <NavLink to="/about">About Us</NavLink>
+        <NavLink to="/institute">Institute</NavLink>
       </div>
     </div>
 
