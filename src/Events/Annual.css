@@ -4,59 +4,21 @@
   background-color: #e0e0e0;
   margin: 60px 0;
 }
-/* Image */
-.event-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+/* Button */
+.show-more-btn {
   display: block;
-}
-.events-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
-  padding: 0 60px;
-}
-
-/* Wrapper */
-.event-card {
-  position: relative;
-  height: 300px;
-  border-radius: 20px;
-  overflow: hidden;
+  margin: 30px auto;
+  padding: 10px 35px;
+  border: 1px solid #f97316;
+  background: transparent;
+  color: #f97316;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-.events-grid img {
-  width: 100%;
-  height: 100px;
-  border-radius: 20px;
-  object-fit: cover;
-}
-
-/* Overlay text */
-.overlay-text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 15px;
+.show-more-btn:hover {
+  background: #f97316;
   color: white;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0)
-  );
 }
-
-.overlay-text h4 {
-  margin: 0;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.overlay-text p {
-  margin: 5px 0 0;
-  font-size: 12px;
-}
-
-

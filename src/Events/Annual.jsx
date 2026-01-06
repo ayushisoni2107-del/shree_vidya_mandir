@@ -11,72 +11,20 @@ function Annual(){
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat, ante eu cursus pretium
         </p>
       </div>
-  <div className="events-grid">
-  <div className="event-card">
-    <img src="event4.png" />
-    <div className="overlay-text">
-      <h4>Annual Function</h4>
-      <p>Lorem ipsum dolor sit amet</p>
+    <div   style={{ display: "flex", justifyContent: "center", gap: "15px", padding: "0 5"}}>
+        <img src="event4.png" style={{width: "20%",height: "300px",borderRadius: "20px",objectFit: "cover"}}/>
+        <img src="event2.png" style={{width: "20%",height: "300px",borderRadius: "20px",objectFit: "cover"}} />
+        <img src="event1.png" style={{width: "20%",height: "300px",borderRadius: "20px",objectFit: "cover"}}/>
+        <img src="event3.png" style={{width: "20%",height: "300px",borderRadius: "20px",objectFit: "cover"}}/>
+    </div><br/>
+    <div style={{ display: "flex", justifyContent: "center", gap: "15px", padding: "0 5px"}}> 
+        <img src="event1.png" style={{width: "20%",height: "300px",borderRadius: "20px",objectFit: "cover"}}/>
+        <img src="event3.png" style={{width: "20%",height: "300px",borderRadius: "20px",objectFit: "cover"}}/>
+        <img src="event4.png" style={{width: "20%",height: "300px",borderRadius: "20px",objectFit: "cover"}}/>
+        <img src="event2.png" style={{width: "20%",height: "300px",borderRadius: "20px",objectFit: "cover"}}/>
     </div>
-  </div>
-
-  <div className="event-card">
-    <img src="event2.png" />
-    <div className="overlay-text">
-      <h4>Annual Function</h4>
-      <p>Lorem ipsum dolor sit amet</p>
-    </div>
-  </div>
-
-  <div className="event-card">
-    <img src="event1.png" />
-    <div className="overlay-text">
-      <h4>Annual Function</h4>
-      <p>Lorem ipsum dolor sit amet</p>
-    </div>
-  </div>
-
-  <div className="event-card">
-    <img src="event3.png" />
-    <div className="overlay-text">
-      <h4>Annual Function</h4>
-      <p>Lorem ipsum dolor sit amet</p>
-    </div>
-  </div>
-
-  <div className="event-card">
-    <img src="event1.png" />
-    <div className="overlay-text">
-      <h4>Annual Function</h4>
-      <p>Lorem ipsum dolor sit amet</p>
-    </div>
-  </div>
-
-  <div className="event-card">
-    <img src="event3.png" />
-    <div className="overlay-text">
-      <h4>Annual Function</h4>
-      <p>Lorem ipsum dolor sit amet</p>
-    </div>
-  </div>
-
-  <div className="event-card">
-    <img src="event4.png" />
-    <div className="overlay-text">
-      <h4>Annual Function</h4>
-      <p>Lorem ipsum dolor sit amet</p>
-    </div>
-  </div>
-
-  <div className="event-card">
-    <img src="event2.png" />
-    <div className="overlay-text">
-      <h4>Annual Function</h4>
-      <p>Lorem ipsum dolor sit amet</p>
-    </div>
-  </div>
-</div>
-
+    {/* Button */}
+      <button className="show-more-btn">Show More</button>
         </>
     );
 }
