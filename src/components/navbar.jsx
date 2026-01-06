@@ -26,9 +26,12 @@ const Navbar = () => {
           <li><a href="#">Contact Us</a></li>
         </ul> 
         */}
-        <NavLink to="/" end>Home</NavLink>
-        <NavLink to="/about">About Us</NavLink>
-        <NavLink to="/Institute">Institute</NavLink>
+        <ul className="nav-menu">
+        <li><NavLink to="/" end>Home</NavLink></li>
+        <li><NavLink to="/about">About Us</NavLink></li>
+        <li><NavLink to="/Institute">Institute</NavLink></li>
+        <li><NavLink to="/Academics">Academics</NavLink></li>
+        </ul>
       </nav>
     </>
   );

@@ -30,9 +30,12 @@ function Footer() {
     {/* Column 2: Navigation Links */}
     <div className="footer-col links-grid">
       <div className="link-column">
-        <NavLink to="/" end>Home</NavLink>
-        <NavLink to="/about">About Us</NavLink>
-        <NavLink to="/institute">Institute</NavLink>
+        <ul>
+        <li><NavLink to="/" end>Home</NavLink></li>
+        <li><NavLink to="/about">About Us</NavLink></li>
+        <li><NavLink to="/institute">Institute</NavLink></li>
+        <li><NavLink to="/Academics">Academics</NavLink></li>
+        </ul>
       </div>
     </div>
 
