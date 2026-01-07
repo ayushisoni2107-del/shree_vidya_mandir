@@ -7,6 +7,7 @@ import Academics from "./pages/Academics.jsx";
 import Events from "./pages/Events.jsx";
 import Achivement from "./pages/Achivement.jsx"
 import Career from "./pages/Career.jsx";
+import Contact from "./pages/Contact.jsx";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Route path="/Events" element={<Events />} />
       <Route path="/Achivement" element={<Achivement />} />
       <Route path="/Career" element={<Career />} />
+      <Route path="/Contact" element={<Contact />} />
     </Routes>
     );
 };

@@ -38,6 +38,7 @@ function Footer() {
         <li><NavLink to="/Events">Events</NavLink></li>
         <li><NavLink to="/Achivement">Achivement</NavLink></li>
         <li><NavLink to="/Career">Career</NavLink></li>
+        <li><NavLink to="/Contact">Contact-us</NavLink></li>
         </ul>
       </div>
     </div>

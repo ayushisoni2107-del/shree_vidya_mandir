@@ -8,9 +8,9 @@ return(
         <h1 align="center">Career</h1>
         
         <p className="career-desc">
-        Etiam vel consectetur dolor. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Cras posuere purus ut leo iaculis convallis. Nullam
-        fermentum odio quis consectetur dolor.
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere purus ut leo iaculis convallis. Nullam fermentum odio quis
+Etiam vel consectetur dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere purus ut leo iaculis convallis. 
+Nullam fermentum odio quis Etiam vel consectetur dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
       </p>
 
       {/* Job Cards Grid */}
@@ -26,8 +26,9 @@ return(
             </p>
 
             <div className="job-meta">
+                <span><img src="l.png"/></span>
               <span>0–2 Years</span>
-              <span>•</span>
+              <span><img src="l.png"/></span>
               <span>Lorem ipsum dolor sit amet</span>
             </div>
 
@@ -37,7 +38,6 @@ return(
           </div>
         </div>
 
-        {/* Duplicate cards */}
         <div className="job-card">
           <img src="logo.png" alt="school logo" className="job-logo" />
           <div className="job-info">
@@ -46,14 +46,217 @@ return(
               Shree C.N. Patel Saraswati ShishuMandir
             </p>
             <div className="job-meta">
+              <span><img src="l.png"/></span>
               <span>0–2 Years</span>
-              <span>•</span>
+              <span><img src="l.png"/></span>
               <span>Lorem ipsum dolor sit amet</span>
             </div>
             <a href="#" className="apply-link">Apply Now</a>
           </div>
         </div>
+
+          <div className="job-card">
+          <img src="logo.png" alt="school logo" className="job-logo" />
+
+          <div className="job-info">
+            <h4>Science Teacher</h4>
+            <p className="school-name">
+              Shree C.N. Patel Saraswati ShishuMandir
+            </p>
+
+            <div className="job-meta">
+              <span><img src="l.png"/></span>
+              <span>0–2 Years</span>
+              <span><img src="l.png"/></span>
+              <span>Lorem ipsum dolor sit amet</span>
+            </div>
+
+            <a href="#" className="apply-link">
+              Apply Now
+            </a>
+          </div>
+        </div>
+
+          <div className="job-card">
+          <img src="logo.png" alt="school logo" className="job-logo" />
+
+          <div className="job-info">
+            <h4>Science Teacher</h4>
+            <p className="school-name">
+              Shree C.N. Patel Saraswati ShishuMandir
+            </p>
+
+            <div className="job-meta">
+              <span><img src="l.png"/></span>
+              <span>0–2 Years</span>
+              <span><img src="l.png"/></span>
+              <span>Lorem ipsum dolor sit amet</span>
+            </div>
+
+            <a href="#" className="apply-link">
+              Apply Now
+            </a>
+          </div>
+        </div>
+
+          <div className="job-card">
+          <img src="logo.png" alt="school logo" className="job-logo" />
+
+          <div className="job-info">
+            <h4>Science Teacher</h4>
+            <p className="school-name">
+              Shree C.N. Patel Saraswati ShishuMandir
+            </p>
+
+            <div className="job-meta">
+              <span><img src="l.png"/></span>
+              <span>0–2 Years</span>
+              <span><img src="l.png"/></span>
+              <span>Lorem ipsum dolor sit amet</span>
+            </div>
+
+            <a href="#" className="apply-link">
+              Apply Now
+            </a>
+          </div>
+        </div>
+
+          <div className="job-card">
+          <img src="logo.png" alt="school logo" className="job-logo" />
+
+          <div className="job-info">
+            <h4>Science Teacher</h4>
+            <p className="school-name">
+              Shree C.N. Patel Saraswati ShishuMandir
+            </p>
+
+            <div className="job-meta">
+              <span><img src="l.png"/></span>
+              <span>0–2 Years</span>
+              <span><img src="l.png"/></span>
+              <span>Lorem ipsum dolor sit amet</span>
+            </div>
+
+            <a href="#" className="apply-link">
+              Apply Now
+            </a>
+          </div>
+        </div>
+
+          <div className="job-card">
+          <img src="logo.png" alt="school logo" className="job-logo" />
+
+          <div className="job-info">
+            <h4>Science Teacher</h4>
+            <p className="school-name">
+              Shree C.N. Patel Saraswati ShishuMandir
+            </p>
+
+            <div className="job-meta">
+              <span><img src="l.png"/></span>
+              <span>0–2 Years</span>
+              <span><img src="l.png"/></span>
+              <span>Lorem ipsum dolor sit amet</span>
+            </div>
+
+            <a href="#" className="apply-link">
+              Apply Now
+            </a>
+          </div>
+        </div>
+
+          <div className="job-card">
+          <img src="logo.png" alt="school logo" className="job-logo" />
+
+          <div className="job-info">
+            <h4>Science Teacher</h4>
+            <p className="school-name">
+              Shree C.N. Patel Saraswati ShishuMandir
+            </p>
+
+            <div className="job-meta">
+              <span><img src="l.png"/></span>
+              <span>0–2 Years</span>
+              <span><img src="l.png"/></span>
+              <span>Lorem ipsum dolor sit amet</span>
+            </div>
+
+            <a href="#" className="apply-link">
+              Apply Now
+            </a>
+          </div>
+        </div>
+
+ <div className="job-card">
+          <img src="logo.png" alt="school logo" className="job-logo" />
+          <div className="job-info">
+            <h4>Science Teacher</h4>
+            <p className="school-name">
+              Shree C.N. Patel Saraswati ShishuMandir
+            </p>
+            <div className="job-meta">
+              <span><img src="l.png"/></span>
+              <span>0–2 Years</span>
+              <span><img src="l.png"/></span>
+              <span>Lorem ipsum dolor sit amet</span>
+            </div>
+            <a href="#" className="apply-link">Apply Now</a>
+          </div>
+        </div>
+
+         <div className="job-card">
+          <img src="logo.png" alt="school logo" className="job-logo" />
+          <div className="job-info">
+            <h4>Science Teacher</h4>
+            <p className="school-name">
+              Shree C.N. Patel Saraswati ShishuMandir
+            </p>
+            <div className="job-meta">
+              <span><img src="l.png"/></span>
+              <span>0–2 Years</span>
+              <span><img src="l.png"/></span>
+              <span>Lorem ipsum dolor sit amet</span>
+            </div>
+            <a href="#" className="apply-link">Apply Now</a>
+          </div>
+        </div>
+
+         <div className="job-card">
+          <img src="logo.png" alt="school logo" className="job-logo" />
+          <div className="job-info">
+            <h4>Science Teacher</h4>
+            <p className="school-name">
+              Shree C.N. Patel Saraswati ShishuMandir
+            </p>
+            <div className="job-meta">
+              <span><img src="l.png"/></span>
+              <span>0–2 Years</span>
+              <span><img src="l.png"/></span>
+              <span>Lorem ipsum dolor sit amet</span>
+            </div>
+            <a href="#" className="apply-link">Apply Now</a>
+          </div>
+        </div>
+
+         <div className="job-card">
+          <img src="logo.png" alt="school logo" className="job-logo" />
+          <div className="job-info">
+            <h4>Science Teacher</h4>
+            <p className="school-name">
+              Shree C.N. Patel Saraswati ShishuMandir
+            </p>
+            <div className="job-meta">
+              <span><img src="l.png"/></span>
+              <span>0–2 Years</span>
+              <span><img src="l.png"/></span>
+              <span>Lorem ipsum dolor sit amet</span>
+            </div>
+            <a href="#" className="apply-link">Apply Now</a>
+          </div>
+        </div><br/>
+
       </div>
+      <button className="show-more-btn">Show More</button><br/><br/>
       </div>
     </>
 );
