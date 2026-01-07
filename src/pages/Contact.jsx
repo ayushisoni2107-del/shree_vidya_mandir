@@ -1,8 +1,8 @@
 import Navbar from "../Components/Navbar";
-
+import Contact from "../contact/Contact"
 import Footer from "../Components/Footer";
 
-function Contact(){
+function Contact1(){
 return(
     <>
     <Navbar />
@@ -11,4 +11,4 @@ return(
     </>
 );
 }
-export default Contact;
+export default Contact1;
