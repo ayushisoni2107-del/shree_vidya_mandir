@@ -6,6 +6,7 @@ import Institute from "./pages/Institutes.jsx";
 import Academics from "./pages/Academics.jsx";
 import Events from "./pages/Events.jsx";
 import Achivement from "./pages/Achivement.jsx"
+import Career from "./pages/Career.jsx";
 
 const App = () => {
   return (

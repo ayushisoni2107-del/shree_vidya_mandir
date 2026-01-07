@@ -37,6 +37,7 @@ function Footer() {
         <li><NavLink to="/Academics">Academics</NavLink></li>
         <li><NavLink to="/Events">Events</NavLink></li>
         <li><NavLink to="/Achivement">Achivement</NavLink></li>
+        <li><NavLink to="/Career">Career</NavLink></li>
         </ul>
       </div>
     </div>
