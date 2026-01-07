@@ -32,6 +32,7 @@ const Navbar = () => {
         <li><NavLink to="/Institute">Institute</NavLink></li>
         <li><NavLink to="/Academics">Academics</NavLink></li>
         <li><NavLink to="/Events">Events</NavLink></li>
+        <li><NavLink to="/Achivement">Achivement</NavLink></li>
         </ul>
       </nav>
     </>

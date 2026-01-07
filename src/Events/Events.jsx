@@ -84,7 +84,6 @@ function EventSmall() {
         <p>Lorem ipsum dolor sit amet</p>
       </div>
     </div>
-   <hr class="section-divider" />
     </>
   );
 }
