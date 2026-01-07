@@ -1,0 +1,71 @@
+.career-title {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.career-desc {
+  text-align: center;
+  width: 65%;
+  margin: 10px auto 40px;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.6;
+}
+
+/* Grid */
+.career-grid {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+/* Card */
+.job-card {
+  display: flex;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  align-items: center;
+}
+
+/* Logo */
+.job-logo {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+/* Info */
+.job-info h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.school-name {
+  font-size: 13px;
+  color: #666;
+  margin: 4px 0;
+}
+
+.job-meta {
+  font-size: 12px;
+  color: #999;
+  display: flex;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.apply-link {
+  font-size: 13px;
+  color: #2d6cdf;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.apply-link:hover {
+  text-decoration: underline;
+}

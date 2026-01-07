@@ -1,4 +1,5 @@
 import React from "react";
+import "./Career.css";
 
 function career1(){
 return(
