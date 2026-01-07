@@ -16,28 +16,30 @@ function achive() {
             <span style={{ color: "#ccc" }}>/Student</span>
         </div><br/><br/>
 
-         <div className="image-style">
-        {/* Image */}
-        <img src="ac1.png" alt="Achievement" className="img"/>
-
-        {/* Content */}
-        <div style={{ padding: "25px",width: "55%",}}>
-          <span style={{backgroundColor: "#222",color: "#fff",padding: "4px 12px",borderRadius: "20px",fontSize: "12px",
-            display: "inline-block",marginBottom: "10px",}}>
-            Faculty
-          </span>
-
-          <h3 style={{ margin: "10px 0" }}>
-            Lorem ipsum dolor sit amet
-          </h3>
-
-          <p style={{ fontSize: "14px", color: "#777", lineHeight: "1.6" }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere
-            purus ut leo iaculis convallis. Nullam fermentum odio quis Etiam vel
-            consectetur dolor.
-          </p>
-        </div>
+    <div className="image-style">
+      <img src="ac1.png" alt="Achievement" className="img" />
+      <div className="content">
+        <span className="tag">Faculty</span>
+        <h3>Lorem ipsum dolor sit amet</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere
+          purus ut leo iaculis convallis. Nullam fermentum odio quis Etiam vel
+          consectetur dolor.
+        </p>
       </div>
+    </div><br/>
+      <div className="image-style">
+      <div className="content">
+        <span className="tag">Student</span>
+        <h3>Lorem ipsum dolor sit amet</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere
+          purus ut leo iaculis convallis. Nullam fermentum odio quis Etiam vel
+          consectetur dolor.
+        </p>
+      </div>
+      <img src="ac2.png" alt="Achievement" className="img" />
+    </div>
         </>
     );
 }
