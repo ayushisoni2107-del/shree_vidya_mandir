@@ -1,12 +1,13 @@
    import React from "react";
 
-   function Hero() {
-     return (
-   <img 
-          src="school-building.jpg" 
-          alt="School Building" 
-          width="100%" height="auto" max-height="500px"  object-fit= "cover" display= "block"
-        />
-     );
-   }
-  export default Hero;
+function Hero() {
+  return (
+    <img
+      src="school-building.jpg"
+      alt="School Building"
+      className="w-full max-h-[500px] object-cover block"
+    />
+  );
+}
+
+export default Hero;

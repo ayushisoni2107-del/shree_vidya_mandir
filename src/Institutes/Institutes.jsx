@@ -1,78 +1,97 @@
 import React from "react";
-import "./Institute.css"
-function Institute(){
-    return(
-        <>
-           <div><h1 align ="center">Institute</h1><br/>
-           <p style={{ textAlign: "center", margin: "0 auto", width: "70%"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere purus ut leo iaculis convallis. Nullam fermentum odio quis
-Etiam vel consectetur dolor.</p>
-           </div>
-                  {/* Institute Columns */}
-      <div className="institute-container">
 
-        {/* LEFT COLUMN */}
-        <div className="institute-column blue">
-          <div className="column-title blue-title">
-            Shree Vidya Prakar Mandir Kharwasa, Dholka
-          </div>
-
-          <InstituteCard />
-          <InstituteCard />
-          <InstituteCard />
-          <InstituteCard />
-          <InstituteCard />
-          <InstituteCard />
-          <InstituteCard />
-          <InstituteCard />
-        </div>
-
-        {/* RIGHT COLUMN */}
-        <div className="institute-column orange">
-          <div className="column-title orange-title">
-            Shree Vidya Prachar Mandal Kalikund, Dholka
-          </div>
-
-          <InstituteCard1 />
-          <InstituteCard1 />
-          <InstituteCard1 />
-          <InstituteCard1 />
-          <InstituteCard1 />
-          <InstituteCard1 />
-          <InstituteCard1 />
-          <InstituteCard1 />
-        </div>
-      </div>
-    </>
-  );
-}
-    function InstituteCard() {
+function Institute() {
   return (
-    <>
-    <div className="institute-card">
-      <img src="s1.png" alt="Institute" />
-
-      <div className="card-content">
-        <h4>Shree C.H. Patel Sarswati Shikshanmandir</h4>
-        <p>Lorem ipsum dolor sit amet adipcing amet adipcingamet adipcing amet aqua lorem ipsum</p>
-        <a href="#">SCNPSshishumandir.com</a>
+    <section className="px-6 py-12 max-w-7xl mx-auto">
+      {/* Page Heading */}
+      <div className="text-center mb-10">
+        <h1 className="text-3xl font-bold mb-3">Institute</h1>
+        <p className="max-w-3xl mx-auto text-gray-600">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Cras posuere purus ut leo iaculis convallis.
+        </p>
       </div>
-    </div>
-    </>
+
+      {/* Two Columns */}
+      <div className="grid md:grid-cols-2 gap-12">
+        {/* LEFT */}
+        <InstituteSection
+          title="Shree Vidya Prachar Mandal Kharwasa, Dholka"
+          color="blue"
+          link="SCNPShishumandir.com"
+        />
+
+        {/* RIGHT */}
+        <InstituteSection
+          title="Shree Vidya Prachar Mandal Kalikund, Dholka"
+          color="orange"
+          link="sbsgss.com"
+        />
+      </div>
+    </section>
   );
 }
-function InstituteCard1(){
-    return(
-        <>
-         <div className="institute-card">
-      <img src="s1.png" alt="Institute" />
 
-      <div className="card-content">
-        <h4>Shree B.S. Goswami Saraswati Shishumandir</h4>
-        <p>Lorem ipsum dolor sit amet adipcing amet adipcingamet adipcing amet aqua lorem ipsum</p>
-        <a href="#">sbsgss.com</a>
+/* COLUMN */
+function InstituteSection({ title, color, link }) {
+  const border =
+    color === "blue" ? "border-blue-400" : "border-orange-400";
+
+  const titleColor =
+    color === "blue" ? "text-blue-600" : "text-orange-500";
+
+  return (
+    <div>
+      {/* TITLE OUTSIDE */}
+      <h3 className={`text-sm font-semibold mb-3 ${titleColor}`}>
+        {title}
+      </h3>
+
+      {/* BORDER BOX */}
+      <div className={`border-2 ${border} rounded-2xl p-4`}>
+        {[...Array(5)].map((_, i) => (
+          <InstituteCard
+            key={i}
+            title={
+              color === "blue"
+                ? "Shree C.H. Patel Saraswati Shishumandir"
+                : "Shree B.S. Goswami Saraswati Shishumandir"
+            }
+            link={link}
+          />
+        ))}
       </div>
     </div>
-        </>
-    );
+  );
 }
+
+/* CARD */
+function InstituteCard({ title, link }) {
+  return (
+    <div className="flex items-center justify-between bg-white rounded-xl p-4 mb-3 shadow-sm hover:shadow-md transition">
+      <div className="flex gap-4">
+        <img
+          src="s1.png"
+          alt="Institute"
+          className="w-20 h-16 rounded-lg object-cover"
+        />
+
+        <div>
+          <h4 className="text-sm font-semibold text-gray-800">
+            {title}
+          </h4>
+          <p className="text-xs text-gray-500 mt-1">
+            Lorem ipsum dolor sit amet, adipiscing elit sed do eiusmod.
+          </p>
+          <a href="#" className="text-xs text-blue-600">
+            {link}
+          </a>
+        </div>
+      </div>
+
+      <span>→</span>
+    </div>
+  );
+}
+
 export default Institute;

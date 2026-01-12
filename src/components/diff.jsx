@@ -1,22 +1,50 @@
-  import React from "react";
-  import "./Legal.css";
+import React from "react";
 
+function Diff() {
+  return (
+    <section className="py-16 px-5 text-center bg-white">
 
- function Diff() {
-   return (
-<section className="legacy-section">
-  <h1>Making Difference</h1>
-  <p className="legacy-description">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat, ante eu cursus pretium. 
-    Lorem ipsum dolor sit amet, consectetur placerat, ante eu cursus pretium.
-  </p>
-      <div>
-        <img src="grad.png" alt="Why Choose" width="25%" />
-        <img src="development.png" alt="Self Development" width="25%" />
-        <img src="spirituality.png" alt="Spirituality" width="25%" />
-         <img src="alumni.png" alt="Alumni" width="25%" />
+      {/* Heading */}
+      <h1 className="text-2xl font-bold mb-4">
+        Making Difference
+      </h1>
+
+      {/* Description */}
+      <p className="max-w-3xl mx-auto mb-12 text-gray-600">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat,
+        ante eu cursus pretium. Lorem ipsum dolor sit amet, consectetur placerat,
+        ante eu cursus pretium.
+      </p>
+
+      {/* Images Row */}
+      <div className="flex justify-center items-center gap-8">
+        <img
+          src="grad.png"
+          alt="Why Choose"
+          className="w-1/4 "
+        />
+
+        <img
+          src="development.png"
+          alt="Self Development"
+          className="w-1/4 "
+        />
+
+        <img
+          src="spirituality.png"
+          alt="Spirituality"
+          className="w-1/4 "
+        />
+
+        <img
+          src="alumni.png"
+          alt="Alumni"
+          className="w-1/4 "
+        />
       </div>
-  </section>
-   );
+
+    </section>
+  );
 }
-  export default Diff;
+
+export default Diff;

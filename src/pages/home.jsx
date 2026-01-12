@@ -13,10 +13,15 @@ function Home() {
       <Navbar />
       <Hero />
       <Legal />
+      <div style={{height: "60px", borderBottom: "5px solid #e0e0e0" }}></div>
       <Community />
+      <div style={{height: "60px", borderBottom: "5px solid #e0e0e0" }}></div>
       <Diff />
+      <div style={{height: "60px", borderBottom: "5px solid #e0e0e0" }}></div>
       <Events />
+      <div style={{height: "60px", borderBottom: "5px solid #e0e0e0" }}></div>
       <News />
+      <div style={{height: "60px", borderBottom: "5px solid #e0e0e0" }}></div>
       <Footer />
       
       </>

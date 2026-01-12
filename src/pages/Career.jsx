@@ -1,11 +1,11 @@
-import Navbar from "../Components/Navbar";
+import Nav from "../Institutes/Nav";
 import Career from "../career/Career";
 
 
 function career(){
 return(
     <>
-    <Navbar />
+    <Nav />
     <Career />
 
     </>

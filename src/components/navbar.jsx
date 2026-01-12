@@ -1,44 +1,63 @@
 import { NavLink } from "react-router-dom";
 import React from "react";
-import  "./Navbar.css";
+
 const Navbar = () => {
   return (
     <>
-      <div className="top-bar"></div>
-      <nav className="navbar">
-        <div className="nav-left">
-          <img src="logo.png" alt="Logo" className="logo-img" />
-          <div className="title">
-            <span className="shree-text">Shree</span>
-            <h2 className="main-title">Vidhya Prachar Mandal</h2>
-            <p className="location-text">Dholka</p>
+      {/* Top blue bar */}
+      <div className="w-full h-10 bg-indigo-600"></div>
+
+      {/* Navbar */}
+      <nav className="flex items-center justify-between px-12 py-3 bg-white shadow-md">
+        
+        {/* Left section */}
+        <div className="flex items-center">
+          <img
+            src="logo.png"
+            alt="Logo"
+            className="h-14 mr-4"
+          />
+
+          <div>
+            <span className="font-bold text-indigo-900">Shree</span>
+            <h2 className="text-indigo-900 text-lg font-semibold uppercase leading-tight">
+              Vidhya Prachar Mandal
+            </h2>
+            <p className="text-orange-500 font-bold text-sm">Dholka</p>
           </div>
         </div>
-       {/*
-       <ul className="nav-menu">
-          <li><a href="">About Us</a></li>
-          <li><a href="#">Institutes</a></li>
-          <li><a href="#">Academics</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Sports</a></li>
-          <li><a href="#">Achievement</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul> 
-        */}
-        <ul className="nav-menu">
-        <li><NavLink to="/" end>Home</NavLink></li>
-        <li><NavLink to="/about">About Us</NavLink></li>
-        <li><NavLink to="/Institute">Institute</NavLink></li>
-        <li><NavLink to="/Academics">Academics</NavLink></li>
-        <li><NavLink to="/Events">Events</NavLink></li>
-        <li><NavLink to="/Sports">Sports</NavLink></li>
-        <li><NavLink to="/Achivement">Achivement</NavLink></li>
-        <li><NavLink to="/Career">Career</NavLink></li>
-        <li><NavLink to="/Contact">Contact-us</NavLink></li>
+
+        {/* Menu */}
+        <ul className="flex gap-6 text-sm font-medium text-gray-700">
+          {[
+            { name: "Home", path: "/" },
+            { name: "About Us", path: "/about" },
+            { name: "Institute", path: "/Institute" },
+            { name: "Academics", path: "/Academics" },
+            { name: "Events", path: "/Events" },
+            { name: "Sports", path: "/Sports" },
+            { name: "Achivement", path: "/Achivement" },
+            { name: "Career", path: "/Career" },
+            { name: "Contact-us", path: "/Contact" },
+          ].map((item) => (
+            <li key={item.path}>
+              <NavLink
+                to={item.path}
+                end
+                className={({ isActive }) =>
+                  `hover:text-indigo-600 transition ${
+                    isActive ? "text-indigo-600 font-semibold" : ""
+                  }`
+                }
+              >
+                {item.name}
+              </NavLink>
+            </li>
+          ))}
         </ul>
       </nav>
     </>
   );
-}
+};
+
 export default Navbar;
