@@ -1,11 +1,17 @@
 import React from "react";
 
 function News() {
+  const cards = [
+    { img: "new1.png", title: "Callander and Newsletter", desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet.....` },
+    { img: "new1.png", title: "Callander and Newsletter", desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet.....`},
+    { img: "new1.png", title: "Callander and Newsletter", desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet.....` },
+    { img: "new1.png", title: "Callander and Newsletter", desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet.....` },
+  ];
   return (
     <section className="py-16 px-5 text-center bg-white">
 
       {/* Heading */}
-      <h1 className="text-3xl font-bold mb-4">News Update</h1>
+      <h1 className="text-5xl font-bold md:font-serif mb-4">News Update</h1>
 
       {/* Description */}
       <p className="max-w-3xl mx-auto mb-12 text-gray-600">
@@ -14,36 +20,31 @@ function News() {
       </p>
 
       {/* Images Row */}
-      <div className="flex justify-center gap-6 max-w-6xl mx-auto">
+  <div className="w-full px-4">
+  <div className="grid grid-cols-4 gap-10">
+    {cards.map((card, index) => (
+      <div key={index} className="relative group w-full h-[420px] rounded-2xl overflow-hidden shadow-lg">
+        {/* Image */}
+        <img src={card.img} alt={card.text} className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-20"/>
 
-        <img
-          src="new1.png"
-          alt="News 1"
-          className="w-1/4 rounded-xl object-cover"
-        />
+        {/* Blue Hover Background */}
+        <div className="absolute inset-0 bg-blue-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-        <img
-          src="new1.png"
-          alt="News 2"
-          className="w-1/4 rounded-xl object-cover"
-        />
+        {/* Text Content */}
+        <div className="absolute inset-0 p-8 text-left opacity-0 group-hover:opacity-100 transition-opacity duration-300 overflow-y-auto">
+          <h3 className="text-white text-3xl font-serif font-semibold mb-4">
+            {card.title}
+          </h3>
 
-        <img
-          src="new1.png"
-          alt="News 3"
-          className="w-1/4 rounded-xl object-cover"
-        />
-
-        <img
-          src="new1.png"
-          alt="News 4"
-          className="w-1/4 rounded-xl object-cover"
-        />
-
+          <p className="text-white leading-relaxed whitespace-pre-line">
+            {card.desc}
+          </p>
+        </div>
       </div>
-
+    ))}
+  </div>
+</div>
     </section>
   );
 }
-
 export default News;

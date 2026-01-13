@@ -5,7 +5,7 @@ function Events() {
     <section className="py-16 px-5 text-center bg-white">
 
       {/* Title */}
-      <h1 className="text-3xl font-bold mb-4">Events</h1>
+      <h1 className="text-5xl font-bold md:font-serif mb-4">Events</h1>
 
       {/* Description */}
       <p className="max-w-3xl mx-auto mb-14 text-gray-600">
@@ -14,39 +14,36 @@ function Events() {
       </p>
 
       {/* Events container */}
-      <div className="flex justify-center items-start gap-4 max-w-6xl mx-auto mb-14 h-[500px]">
+<div className="relative w-full mb-14 overflow-hidden ">
+  <div className="flex items-start gap-8 -mx-[12vw]">
 
-        {/* High */}
-        <div className="relative flex-1 min-w-[200px] h-[350px] rounded-2xl overflow-hidden shadow-lg">
-          <img src="event4.png" alt="Annual Function" className="w-full h-full object-cover" />
-          <EventInfo />
-        </div>
+    <div className="relative group w-[420px] h-[520px] flex-shrink-0 rounded-3xl overflow-hidden shadow-xl">
+      <img src="event4.png" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+      <EventInfo />
+    </div>
 
-        {/* Low */}
-        <div className="relative flex-1 min-w-[200px] h-[350px] mt-16 rounded-2xl overflow-hidden shadow-lg">
-          <img src="event1.png" alt="Annual Function" className="w-full h-full object-cover" />
-          <EventInfo />
-        </div>
+    <div className="relative group w-[420px] h-[520px] mt-24 flex-shrink-0 rounded-3xl overflow-hidden shadow-xl">
+      <img src="event1.png" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+      <EventInfo />
+    </div>
 
-        {/* Lowest */}
-        <div className="relative flex-1 min-w-[200px] h-[350px] mt-32 rounded-2xl overflow-hidden shadow-lg">
-          <img src="event2.png" alt="Annual Function" className="w-full h-full object-cover" />
-          <EventInfo />
-        </div>
+    <div className="relative group w-[420px] h-[520px] mt-44 flex-shrink-0 rounded-3xl overflow-hidden shadow-xl">
+      <img src="event2.png" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+      <EventInfo />
+    </div>
 
-        {/* Low */}
-        <div className="relative flex-1 min-w-[200px] h-[350px] mt-16 rounded-2xl overflow-hidden shadow-lg">
-          <img src="event3.png" alt="Annual Function" className="w-full h-full object-cover" />
-          <EventInfo />
-        </div>
+    <div className="relative group w-[420px] h-[520px] mt-24 flex-shrink-0 rounded-3xl overflow-hidden shadow-xl">
+      <img src="event3.png" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+      <EventInfo />
+    </div>
 
-        {/* High */}
-        <div className="relative flex-1 min-w-[200px] h-[350px] rounded-2xl overflow-hidden shadow-lg">
-          <img src="event4.png" alt="Annual Function" className="w-full h-full object-cover" />
-          <EventInfo />
-        </div>
+    <div className="relative group w-[420px] h-[520px] flex-shrink-0 rounded-3xl overflow-hidden shadow-xl">
+      <img src="event4.png" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+      <EventInfo />
+    </div>
 
-      </div>
+  </div>
+</div>
 
       {/* Button */}
       <button className="px-10 py-3 border border-orange-500 text-orange-500 rounded-full font-semibold hover:bg-orange-500 hover:text-white transition">

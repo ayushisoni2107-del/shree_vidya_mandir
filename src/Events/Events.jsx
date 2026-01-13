@@ -3,9 +3,10 @@ import React from "react";
 function Event() {
   return (
     <>
+    <br/><br/>
       {/* Header */}
       <div className="text-center mb-8 px-4">
-        <h1 className="text-2xl font-bold">Events</h1>
+        <h1 className="text-5xl md:font-serif font-bold">Events</h1>
         <p className="mx-auto mt-4 max-w-3xl text-gray-600 text-sm">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere
           purus ut leo iaculis convallis. Nullam fermentum odio quis. Etiam vel

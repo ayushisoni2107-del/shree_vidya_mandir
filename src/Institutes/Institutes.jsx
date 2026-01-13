@@ -5,7 +5,7 @@ function Institute() {
     <section className="px-6 py-12 max-w-7xl mx-auto">
       {/* Page Heading */}
       <div className="text-center mb-10">
-        <h1 className="text-3xl font-bold mb-3">Institute</h1>
+        <h1 className="text-5xl font-bold md:font-serif mb-3">Institute</h1>
         <p className="max-w-3xl mx-auto text-gray-600">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Cras posuere purus ut leo iaculis convallis.

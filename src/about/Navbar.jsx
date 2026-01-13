@@ -2,12 +2,21 @@ import { NavLink, Link } from "react-router-dom";
 import React from "react";
 
 const Navbar = () => {
+
+  const handleLinkClick = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth", // optional
+    });
+  };
+
   return (
     <>
       {/* Top Bar */}
-      <div className="bg-indigo-600 h-[50px] flex items-center">
+      <div className="bg-[rgba(58,83,164,1)] h-[50px] flex items-center">
         <div className="w-full flex justify-end items-center gap-5 pr-5">
-          
+
           {/* Social Icons */}
           <div className="flex items-center gap-4">
             <img src="in.png" alt="Instagram" className="h-5" />
@@ -17,7 +26,7 @@ const Navbar = () => {
           </div>
 
           {/* Alumni Button */}
-          <Link to="/Alumni">
+          <Link to="/Alumni" onClick={handleLinkClick}>
             <button className="h-[50px] px-6 bg-orange-500 text-white text-sm font-bold hover:bg-orange-600 transition">
               Alumni
             </button>
@@ -26,12 +35,12 @@ const Navbar = () => {
       </div>
 
       {/* Main Navbar */}
-      <nav className="flex justify-between items-center px-12 py-3 bg-white border-b-4 border-indigo-600">
-        
+      <nav className="flex justify-between items-center px-6 py-1 bg-white">
+
         {/* Left Logo */}
         <div className="flex items-center">
-          <img src="logo.png" alt="Logo" className="h-16 mr-4" />
-          
+          <img src="logo.png" alt="Logo" className="h-28 mr-4" />
+
           <div className="leading-tight">
             <span className="block text-sm font-bold text-indigo-900">
               Shree
@@ -62,8 +71,9 @@ const Navbar = () => {
               <NavLink
                 to={item.path}
                 end
+                onClick={handleLinkClick}
                 className={({ isActive }) =>
-                  `text-sm font-medium pb-1 ${
+                  `text-sm font-medium pb-0 ${
                     isActive
                       ? "text-indigo-600 border-b-2 border-indigo-600"
                       : "text-gray-700 hover:text-indigo-600"

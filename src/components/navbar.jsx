@@ -2,20 +2,29 @@ import { NavLink } from "react-router-dom";
 import React from "react";
 
 const Navbar = () => {
+
+  const handleLinkClick = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth", // optional: smooth scrolling
+    });
+  };
+
   return (
     <>
       {/* Top blue bar */}
-      <div className="w-full h-10 bg-indigo-600"></div>
+      <div className="w-full h-10 bg-[rgba(58,83,164,1)]"></div>
 
       {/* Navbar */}
       <nav className="flex items-center justify-between px-12 py-3 bg-white shadow-md">
-        
+
         {/* Left section */}
         <div className="flex items-center">
           <img
             src="logo.png"
             alt="Logo"
-            className="h-14 mr-4"
+            className="h-28 mr-4"
           />
 
           <div>
@@ -44,6 +53,7 @@ const Navbar = () => {
               <NavLink
                 to={item.path}
                 end
+                onClick={handleLinkClick}
                 className={({ isActive }) =>
                   `hover:text-indigo-600 transition ${
                     isActive ? "text-indigo-600 font-semibold" : ""

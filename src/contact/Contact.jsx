@@ -4,7 +4,7 @@ function Contact() {
   return (
     <>
       {/* Title */}
-      <h1 className="text-center text-3xl font-semibold mt-10">Contact Us</h1>
+      <h1 className="text-center text-5xl font-semibold mt-10 md:font-serif">Contact Us</h1>
 
       {/* Description */}
       <p className="text-center text-gray-500 text-base md:text-lg w-11/12 md:w-3/5 mx-auto mt-3 mb-10">

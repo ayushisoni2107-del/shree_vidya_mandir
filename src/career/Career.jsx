@@ -5,7 +5,7 @@ function Career1() {
     <>
       <div className="mt-10">
         {/* Title */}
-        <h1 className="text-center text-3xl font-semibold">Career</h1>
+        <h1 className="text-center text-5xl font-semibold md:font-serif">Career</h1>
 
         {/* Description */}
         <p className="text-center text-gray-500 text-sm leading-relaxed mx-auto w-11/12 md:w-2/3 mt-3 mb-10">

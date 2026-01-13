@@ -4,7 +4,7 @@ function Alumni() {
   return (
     <>
       {/* Title */}
-      <h1 className="text-center text-3xl font-semibold mt-10">Alumni</h1>
+      <h1 className="text-center text-5xl font-semibold mt-10 md:font-serif">Alumni</h1>
 
       {/* Description */}
       <p className="text-center text-gray-500 text-base md:text-lg w-11/12 md:w-2/3 mx-auto mt-4">

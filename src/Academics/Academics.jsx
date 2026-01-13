@@ -3,9 +3,10 @@ import React from "react";
 function Academics() {
   return (
     <>
+    <br/><br/>
       {/* Header Section */}
       <div className="text-center px-4">
-        <h1 className="text-2xl font-bold">Facilities & Services</h1>
+        <h1 className="text-5xl font-bold md:font-serif">Facilities & Services</h1>
         <p className="mx-auto mt-4 max-w-3xl text-center text-gray-700">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere
           purus ut leo iaculis convallis. Nullam fermentum odio quis. Etiam vel

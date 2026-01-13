@@ -7,7 +7,7 @@ function Event(){
     return(
         <>
         <Nav />
-        <div style={{height: "60px", borderBottom: "5px solid #e0e0e0" }}></div>
+        <div></div>
         <Events />
         <div style={{height: "60px", borderBottom: "5px solid #e0e0e0" }}></div>
         <Annual />

@@ -3,9 +3,10 @@ import React from "react";
 function Annual() {
   return (
     <>
+    <br/><br/>
       {/* Header */}
       <div className="text-center mb-8 px-4">
-        <h1 className="text-2xl font-bold">Annual Function</h1>
+        <h1 className="text-5xl md:font-serif font-bold">Annual Function</h1>
         <p className="mx-auto mt-4 max-w-3xl text-gray-600 text-sm">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat, ante eu cursus pretium
         </p>
@@ -66,5 +67,12 @@ function Annual() {
     </>
   );
 }
-
+const EventInfo = () => (
+  <div className="absolute bottom-0 left-0 right-0 p-5 text-left bg-gradient-to-t from-black/80 to-transparent text-white">
+    <h3 className="text-lg font-semibold mb-1">Annual Function</h3>
+    <p className="text-sm opacity-90">
+      Lorem ipsum dolor sit amet adipiscing dolor ipsum.
+    </p>
+  </div>
+);
 export default Annual;

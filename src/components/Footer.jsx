@@ -2,12 +2,21 @@ import { NavLink } from "react-router-dom";
 import React from "react";
 
 function Footer() {
+
+  const handleLinkClick = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth", // optional
+    });
+  };
+
   return (
     <footer className="bg-white px-5 py-10">
-      
+
       {/* Blue Box */}
       <div className="bg-[#3f51b5] rounded-[25px] p-10 flex flex-col lg:flex-row justify-between gap-8 text-white">
-        
+
         {/* Column 1: Logo + Social */}
         <div className="flex-1">
           <div className="flex items-center gap-4">
@@ -27,49 +36,32 @@ function Footer() {
 
           <hr className="my-5 border-white/30" />
 
-  <div className="mt-4">
-  <p className="mb-2 text-sm font-semibold text-white">
-    Follow us
-  </p>
+          <div className="mt-4">
+            <p className="mb-2 text-sm font-semibold text-white">
+              Follow us
+            </p>
 
-  <div className="flex items-center gap-4">
-    {/* Instagram */}
-    <div className="w-10 h-10  rounded-full flex items-center justify-center hover:scale-110 transition cursor-pointer">
-      <img src="insta.png" alt="Instagram" className="w-10 h-10" />
-    </div>
-
-    {/* Facebook */}
-    <div className="w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition cursor-pointer">
-      <img src="facebook.png" alt="Facebook" className="w-10 h-10" />
-    </div>
-
-    {/* Google */}
-    <div className="w-10 h-10  rounded-full flex items-center justify-center hover:scale-110 transition cursor-pointer">
-      <img src="google.png" alt="Google" className="w-10 h-10" />
-    </div>
-
-    {/* Twitter / X */}
-    <div className="w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition cursor-pointer">
-      <img src="twiter.png" alt="Twitter" className="w-10 h-10" />
-    </div>
-  </div>
-</div>
-
-
+            <div className="flex items-center gap-4">
+              <img src="insta.png" alt="Instagram" className="w-10 h-10 hover:scale-110 transition cursor-pointer" />
+              <img src="facebook.png" alt="Facebook" className="w-10 h-10 hover:scale-110 transition cursor-pointer" />
+              <img src="google.png" alt="Google" className="w-10 h-10 hover:scale-110 transition cursor-pointer" />
+              <img src="twiter.png" alt="Twitter" className="w-10 h-10 hover:scale-110 transition cursor-pointer" />
+            </div>
+          </div>
         </div>
 
         {/* Column 2: Links */}
         <div className="flex-1">
           <ul className="grid grid-cols-2 gap-y-3 gap-x-8 text-sm">
-            <li><NavLink to="/">Home</NavLink></li>
-            <li><NavLink to="/about">About Us</NavLink></li>
-            <li><NavLink to="/institute">Institute</NavLink></li>
-            <li><NavLink to="/Academics">Academics</NavLink></li>
-            <li><NavLink to="/Events">Events</NavLink></li>
-            <li><NavLink to="/Sports">Sports</NavLink></li>
-            <li><NavLink to="/Achivement">Achivement</NavLink></li>
-            <li><NavLink to="/Career">Career</NavLink></li>
-            <li><NavLink to="/Contact">Contact Us</NavLink></li>
+            <li><NavLink to="/" onClick={handleLinkClick}>Home</NavLink></li>
+            <li><NavLink to="/about" onClick={handleLinkClick}>About Us</NavLink></li>
+            <li><NavLink to="/institute" onClick={handleLinkClick}>Institute</NavLink></li>
+            <li><NavLink to="/Academics" onClick={handleLinkClick}>Academics</NavLink></li>
+            <li><NavLink to="/Events" onClick={handleLinkClick}>Events</NavLink></li>
+            <li><NavLink to="/Sports" onClick={handleLinkClick}>Sports</NavLink></li>
+            <li><NavLink to="/Achivement" onClick={handleLinkClick}>Achivement</NavLink></li>
+            <li><NavLink to="/Career" onClick={handleLinkClick}>Career</NavLink></li>
+            <li><NavLink to="/Contact" onClick={handleLinkClick}>Contact Us</NavLink></li>
           </ul>
         </div>
 

@@ -5,7 +5,7 @@ function Hero() {
     <img
       src="school-building.jpg"
       alt="School Building"
-      className="w-full max-h-[500px] object-cover block"
+      className="w-[1690px] h-[815px] object-cover block mx-auto"
     />
   );
 }
