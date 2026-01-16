@@ -70,7 +70,7 @@ function Footer() {
           <img
             src="map.png"
             alt="Map Location"
-            className="w-full max-w-[350px] rounded-[15px] border-4 border-white"
+            className="w-full max-w-[600px] h-[350px] object-cover rounded-2xl border-4 border-white"
           />
         </div>
       </div>
