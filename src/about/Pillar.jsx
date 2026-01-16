@@ -63,5 +63,4 @@ const pillars = [
     </>
   );
 }
-
 export default Pillar;

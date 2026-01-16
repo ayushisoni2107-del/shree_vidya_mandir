@@ -1,58 +1,107 @@
 import React from "react";
 
 function Sport() {
-  const sports = [
-    { img: "s1 (2).png", title: "Football", date: "April 2024", color: "bg-blue-700" },
-    { img: "s2.png", title: "Cricket", date: "April 2024", color: "bg-blue-700", featured: true },
-    { img: "s3.png", title: "Badminton", date: "April 2024", color: "bg-blue-700" },
-    { img: "s4.png", title: "Volleyball", date: "April 2024", color: "bg-blue-700" },
-    { img: "s5.png", title: "Hockey", date: "April 2024", color: "bg-orange-500" },
-    { img: "s6.png", title: "Tennis", date: "April 2024", color: "bg-orange-500" },
-    { img: "s3.png", title: "Badminton", date: "April 2024", color: "bg-blue-700" },
-    { img: "s1 (2).png", title: "Football", date: "April 2024", color: "bg-orange-500" },
-  ];
-
   return (
-    <>
-      {/* Header */}
-      <div className="text-center px-4 mt-10">
+    <section className="bg-white py-16">
+
+      {/* HEADER */}
+      <div className="text-center px-4 mb-12">
         <h1 className="text-5xl font-bold md:font-serif">SPORTS</h1>
-        <p className="mx-auto mt-4 max-w-3xl text-gray-600 text-sm">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere purus ut leo iaculis convallis.
+        <p className="mx-auto mt-4 max-w-3xl text-gray-500 text-sm italic">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
       </div>
 
-      {/* Grid Layout */}
-      <div className="max-w-6xl mx-auto px-4 md:px-10 mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[250px]">
-        {sports.map((sport, index) => (
-          <div
-            key={index}
-            className={`relative rounded-xl overflow-hidden shadow-lg
-              ${sport.featured ? "row-span-2 auto-rows-[520px]" : ""}
-            `}
-          >
-            <img
-              src={sport.img}
-              alt={sport.title}
-              className="w-full h-full object-cover"
-            />
-
-            {/* Overlay */}
-            <div className={`absolute bottom-0 left-0 right-0 ${sport.color} text-white p-4`}>
-              <h4 className="text-sm font-semibold">{sport.title}</h4>
-              <span className="text-xs">{sport.date}</span>
-            </div>
+      {/* ✅ GRID WRAPPER (VERY IMPORTANT) */}
+      <div className="max-w-full mx-auto px-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[220px]">
+        {/* CARD 1 */}
+        <div className="relative row-span-2 overflow-hidden shadow-md">
+          <img src="s1 (2).png" className="w-full h-full object-cover" />
+          <div className="absolute bottom-0 w-full p-4 text-white bg-[#3f51b5]">
+            <h3 className="font-semibold">Football</h3>
+            <p className="text-xs">Tues , April 26 - 31st May 2024</p>
           </div>
-        ))}
+        </div>
+
+        {/* CARD 2 (TALL CENTER) */}
+        <div className="relative row-span-3 overflow-hidden shadow-md">
+          <img src="s2.png" className="w-full h-full object-cover" />
+          <div className="absolute bottom-0 w-full p-4 text-white bg-[#3f51b5]">
+            <h3 className="font-semibold">Cricket</h3>
+            <p className="text-xs">Tues , April 26 - 31st May 2024</p>
+          </div>
+        </div>
+
+        <div className="relative lg:col-start-2 lg:row-start-4 row-span-2 overflow-hidden shadow-md">
+          <img src="s5.png" className="w-full h-full object-cover" />
+          <div className="absolute bottom-0 w-full p-4 text-white bg-[#333333]">
+            <h3 className="font-semibold">New Sport</h3>
+            <p className="text-xs">Tues , April 26 - 31st May 2024</p>
+          </div>
+        </div>
+
+        {/* CARD 3 */}
+        <div className="relative row-span-2 overflow-hidden shadow-md">
+          <img src="s3.png" className="w-full h-full object-cover" />
+          <div className="absolute bottom-0 w-full p-4 text-white bg-[#3f51b5]">
+            <h3 className="font-semibold">Badminton</h3>
+            <p className="text-xs">Tues , April 26 - 31st May 2024</p>
+          </div>
+        </div>
+
+        {/* CARD 4 */}
+        <div className="relative row-span-2 overflow-hidden shadow-md">
+          <img src="s4.png" className="w-full h-full object-cover" />
+          <div className="absolute bottom-0 w-full p-4 text-white bg-[#333333]">
+            <h3 className="font-semibold">Volleyball</h3>
+            <p className="text-xs">Tues , April 26 - 31st May 2024</p>
+          </div>
+        </div>
+
+        {/* CARD 5 */}
+        <div className="relative row-span-2 overflow-hidden shadow-md">
+          <img src="s5.png" className="w-full h-full object-cover" />
+          <div className="absolute bottom-0 w-full p-4 text-white bg-[#333333]">
+            <h3 className="font-semibold">Tennis</h3>
+            <p className="text-xs">Tues , April 26 - 31st May 2024</p>
+          </div>
+        </div>
+
+        {/* CARD 6 */}
+        <div className="relative row-span-2 overflow-hidden shadow-md">
+          <img src="s6.png" className="w-full h-full object-cover" />
+          <div className="absolute bottom-0 w-full p-4 text-white bg-[#f39c12]">
+            <h3 className="font-semibold">Hockey</h3>
+            <p className="text-xs">Tues , April 26 - 31st May 2024</p>
+          </div>
+        </div>
+
+        {/* CARD 7 */}
+        <div className="relative row-span-2 overflow-hidden shadow-md">
+          <img src="bad.png" className="w-full h-full object-cover" />
+          <div className="absolute bottom-0 w-full p-4 text-white bg-[#f39c12]">
+            <h3 className="font-semibold">Badminton</h3>
+            <p className="text-xs">Tues , April 26 - 31st May 2024</p>
+          </div>
+        </div>
+
+        {/* CARD 8 */}
+        <div className="relative row-span-2 overflow-hidden shadow-md">
+          <img src="foot.png" className="w-full h-full object-cover" />
+          <div className="absolute bottom-0 w-full p-4 text-white bg-[#f39c12]">
+            <h3 className="font-semibold">Football</h3>
+            <p className="text-xs">Tues , April 26 - 31st May 2024</p>
+          </div>
+        </div>
+
       </div>
 
-      {/* View More Button */}
-      <div className="flex justify-center mt-10">
-        <button className="px-6 py-2 border border-gray-400 rounded-full text-sm hover:bg-gray-100 transition">
-          View More
-        </button>
-      </div>
-    </>
+      {/* BUTTON */}
+       <button className="mt-8 mb-12 px-10 py-3 border-2 border-orange-500 text-orange-500 rounded-full font-bold mx-auto block hover:bg-orange-500 hover:text-white transition duration-300">
+        Show More
+      </button>
+
+    </section>
   );
 }
 

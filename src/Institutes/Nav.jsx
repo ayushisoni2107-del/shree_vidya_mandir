@@ -18,7 +18,7 @@ const Navbar = () => {
         
         {/* Left Logo Section */}
         <div className="flex items-center">
-          <img src="logo.png" alt="Logo" className="h-16 mr-3" />
+          <img src="logo.png" alt="Logo" className="h-28 mr-3" />
           <div className="leading-tight">
             <span className="text-sm font-bold text-indigo-900">Shree</span>
             <h2 className="text-lg text-indigo-900 m-0">Vidhya Prachar Mandal</h2>

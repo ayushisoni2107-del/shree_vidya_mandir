@@ -18,36 +18,43 @@ function Career1() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-11/12 md:w-10/12 mx-auto">
           {/* Single Job Card */}
           {Array.from({ length: 12 }).map((_, idx) => (
-            <div key={idx} className="flex items-center bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-              {/* Logo */}
-              <img
-                src="logo.png"
-                alt="school logo"
-                className="w-16 h-16 object-cover mr-4 flex-shrink-0 rounded-md"
-              />
+            <div
+  key={idx}
+  className="relative flex items-center bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition-shadow"
+>
 
-              {/* Info */}
-              <div>
-                <h4 className="text-lg font-semibold">Science Teacher</h4>
-                <p className="text-gray-600 text-sm mt-1 mb-2">
-                  Shree C.N. Patel Saraswati ShishuMandir
-                </p>
+  {/* Save & Share */}
+  <div className="absolute top-3 right-3 flex gap-3">
+    <img src="save.png" className="w-4 h-4 cursor-pointer opacity-70 hover:opacity-100" />
+    <img src="share.png" className="w-4 h-4 cursor-pointer opacity-70 hover:opacity-100" />
+  </div>
 
-                <div className="flex items-center gap-2 text-gray-400 text-xs mb-2">
-                  <img src="l.png" alt="" className="w-3 h-3" />
-                  <span>0–2 Years</span>
-                  <img src="l.png" alt="" className="w-3 h-3" />
-                  <span>Lorem ipsum dolor sit amet</span>
-                </div>
+  {/* Logo */}
+  <img
+    src="logo.png"
+    alt="school logo"
+    className="w-24 h-24 object-cover mr-4 flex-shrink-0 rounded-md"
+  />
 
-                <a
-                  href="#"
-                  className="text-blue-600 font-medium text-sm hover:underline"
-                >
-                  Apply Now
-                </a>
-              </div>
-            </div>
+  {/* Info */}
+  <div>
+    <h4 className="text-lg font-semibold">Science Teacher</h4>
+    <p className="text-gray-600 text-sm mt-1 mb-2">
+      Shree C.N. Patel Saraswati ShishuMandir
+    </p>
+
+    <div className="flex items-center gap-2 text-gray-400 text-xs mb-2">
+      <img src="l.png" className="w-3 h-3" />
+      <span>0–2 Years</span>
+      <img src="l.png" className="w-3 h-3" />
+      <span>Lorem ipsum dolor sit amet</span>
+    </div>
+
+    <a href="#" className="text-blue-600 font-medium text-sm hover:underline">
+      Apply Now
+    </a>
+  </div>
+</div>
           ))}
         </div>
 
